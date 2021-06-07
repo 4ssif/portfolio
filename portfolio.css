@@ -1,0 +1,418 @@
+*{
+    box-sizing: border-box;
+}
+.header{
+    box-sizing: border-box;
+    display:flex ;
+    flex-wrap: wrap;
+    background-color: teal;
+    padding: 20px 0;
+}
+.fst{width: 30%;
+    margin: 0 auto;}
+.snd{width: 30%;
+    margin: 0 auto;}
+.trt{width: 40%;
+    margin: 0 auto;}
+.logo{
+    height: 100px;
+    width: 100px;
+    font-size: 70px;
+    margin: auto auto;
+}
+i{
+    border: 2px solid white;
+    background-color:wheat;
+    border-radius: 50%;
+    padding: 10px;
+}
+.name{
+    color: white;
+    height: max-content;
+    width: max-content;
+    margin: 0 auto;
+    font-size: 25px;
+    letter-spacing: 2px
+}
+.menu{
+    height: max-content;
+    width: max-content;
+    margin: 50px 10px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    margin: 40px 20px;
+    font-size: 20px;
+}
+
+/* MENU ENDS HERE..... */
+
+
+
+/* HOME DESCRIPTION STARTS....... */
+
+
+.home{
+    margin: 0 auto;
+    text-align: center;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 55px;
+    padding: 30px 0 10px 0;
+}
+.home > p{
+    margin: 5px 0;
+}
+.home2 > p{
+    width: 550px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+
+/* TUTORIAL STARTS...... */
+
+
+.tutorial{
+    background-color: gray;
+    text-align: center;
+    padding: 20px 0;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.tutorial > .title{
+    color: white;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.card{
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.cardbody{
+    padding: 5px;
+    background-color: tomato;
+}
+.cardbody > .cardtitle{
+    font-size: 2rem;
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: 80%;
+}
+
+/*  ABOUT  ME  STARTS */
+.aboutme{
+    background-color: rgb(34, 148, 137);
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.aboutme > .title{
+    width: 100%;
+}
+.aboutme > .body1{
+    width: 50%;
+}
+.aboutme > .body2{
+    width: 50%;
+    padding-right: 10px ;
+
+}
+.aboutme > .body1 > img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+.ptx{
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+.btn{
+    margin: 0 auto;
+}
+button{
+    background-color: rgba(128, 128, 128, 0.829);
+    padding: 20px;
+    border-radius: 10px;
+} 
+
+/* Skills CARD */
+
+.skills{
+    text-align: center;
+    padding: 30px 0;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.skills > .card{
+    background-color: gray;
+    box-sizing: border-box;
+    height:750px;
+    width: 450px;
+    border-radius: 20px;
+    margin: 0 30px;
+}
+.skills > .card > .slogo > img{
+    font-size: 60px;
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-top: 20px;
+}
+.skills > .card > .title{
+    width: 100%;
+    background-color: rgb(73, 71, 71);
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+.skills > .card > .list{
+    text-align: left;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+.skills > .card > .list > ol > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+/* skills animation */
+
+.skillcontainer{
+    background-color: grey;
+    width: 100%;
+    padding: 20px 20px 20px 10px;
+    text-align: left;
+}
+.skillcontainer li{
+    list-style-type: none;
+    margin: 50px 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.skillcontainer li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px );
+    left: 0;
+
+
+    background-color: rgb(170,167,173);
+    width: 100%;
+    height: 25px;
+    border-radius: 1000px;
+}
+
+.skillcontainer li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px );
+    left: 0;
+
+
+    background-color: rgb(249,249,250);
+    width: 0;
+    height: 25px;
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    /* animation-iteration-count: 1;
+    animation-direction: forward; */
+    animation-fill-mode: forwards;
+}
+
+.skillcontainer li.html::after{
+    animation-name: html;
+
+}
+@keyframes html{
+    to{
+        width: 90%;
+        background-color: tomato;
+    }
+}
+
+.skillcontainer li.css::after{
+    animation-name: css;
+
+}
+@keyframes css{
+    to{
+        width: 70%;
+        background-color: rgba(255, 99, 71, 0.815);
+    }
+}
+
+.skillcontainer li.c::after{
+    animation-name: c;
+
+}
+@keyframes c{
+    to{
+        width: 50%;
+        background-color: rgba(255, 99, 71, 0.602);
+    }
+}
+
+.skillcontainer li.cpp::after{
+    animation-name: cpp;
+
+}
+@keyframes cpp{
+    to{
+        width: 30%;
+        background-color: rgba(255, 99, 71, 0.335);
+    }
+}
+
+/* skills animation bar ends */
+
+
+/* CONTACT ME STARTS..... */
+
+
+.contactme{
+    margin-top: 40px;
+    width: 100%;
+    height: 550px;
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgb(34, 148, 137);
+
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+.contactme > .card{
+    box-sizing: border-box;
+    width: 33%;
+    margin: 0;
+    padding: 0 50px;
+    color: white;
+} 
+.contactme > .card > .title{
+    width: 100%;
+}
+
+.achievements p{
+    text-align: left;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+input[type=text],input[type=email]{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 20px 0;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+}
+textarea{
+    resize: none;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+input[type=submit],input[type=reset]{
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(9, 19, 44);
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+}
+.more > .body{
+    padding: 20px 80px;
+}
+.more > .body > img{
+    height: 50px;
+    width: 50px;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 1px;
+    background-color: white;
+    margin: 15px;
+}
+.more > .body > img:hover{
+    height: 80px;
+    width: 80px;
+}
+
+/* Footer Starts */
+.footer{
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+    width: 100%;
+    text-align: right;
+}
+
+
+
+/* other screens.....Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        background-color: red;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        background-color: blue;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        background-color: purple;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+        background-color: pink;
+    }
+}
